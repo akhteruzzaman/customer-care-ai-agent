@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Care Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .chat-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+        .chat-message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .user-message {
+            background: #007bff;
+            color: #fff;
+            text-align: right;
+        }
+        .support-message {
+            background: #ddd;
+            color: #000;
+            text-align: left;
+        }
+        .chat-input {
+            display: flex;
+            margin-top: 10px;
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .chat-input button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .chat-input button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Care</h1>
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@company.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="chat-message support-message">Hello! How can we assist you today?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message" placeholder="Type your message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
